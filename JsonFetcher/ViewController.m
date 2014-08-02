@@ -53,8 +53,6 @@ static NSString *const kUrlString = @"http://www.reddit.com/user/%@/comments.jso
 // This IBAction is connected to a button in storyboard
 // We use this method to tell our web fetcher to retreive online data
 - (IBAction)fetchData:(id)sender {
-    // NSStrings may be concatenated using the + operator
-    // Here, however, we formatted the string to include the username (replacing the %@ with the string specified in the text field)
     NSString* completeUrlString = [NSString stringWithFormat:kUrlString,_usernameTextField.text];
     WebFetcher *fetcher = [WebFetcher sharedInstance];
     [fetcher loadJsonFromUrlWithString:completeUrlString];
