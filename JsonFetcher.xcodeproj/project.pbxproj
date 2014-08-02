@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDC20A4C198D4B9000BE9F3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC20A4B198D4B9000BE9F3B /* Foundation.framework */; };
+		EDC20A4E198D4B9000BE9F3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC20A4D198D4B9000BE9F3B /* CoreGraphics.framework */; };
+		EDC20A50198D4B9000BE9F3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC20A4F198D4B9000BE9F3B /* UIKit.framework */; };
+		EDC20A56198D4B9000BE9F3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDC20A54198D4B9000BE9F3B /* InfoPlist.strings */; };
+		EDC20A58198D4B9000BE9F3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC20A57198D4B9000BE9F3B /* main.m */; };
+		EDC20A5C198D4B9000BE9F3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC20A5B198D4B9000BE9F3B /* AppDelegate.m */; };
+		EDC20A5F198D4B9000BE9F3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC20A5D198D4B9000BE9F3B /* Main.storyboard */; };
+		EDC20A62198D4B9000BE9F3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC20A61198D4B9000BE9F3B /* ViewController.m */; };
+		EDC20A64198D4B9000BE9F3B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC20A63198D4B9000BE9F3B /* Images.xcassets */; };
+		EDC20A6B198D4B9100BE9F3B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC20A6A198D4B9100BE9F3B /* XCTest.framework */; };
+		EDC20A6C198D4B9100BE9F3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC20A4B198D4B9000BE9F3B /* Foundation.framework */; };
+		EDC20A6D198D4B9100BE9F3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC20A4F198D4B9000BE9F3B /* UIKit.framework */; };
+		EDC20A75198D4B9100BE9F3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDC20A73198D4B9100BE9F3B /* InfoPlist.strings */; };
+		EDC20A77198D4B9100BE9F3B /* JsonFetcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC20A76198D4B9100BE9F3B /* JsonFetcherTests.m */; };
+		EDC20A83198D4C9600BE9F3B /* WebFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC20A82198D4C9600BE9F3B /* WebFetcher.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDC20A6E198D4B9100BE9F3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDC20A40198D4B9000BE9F3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDC20A47198D4B9000BE9F3B;
+			remoteInfo = JsonFetcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EDC20A48198D4B9000BE9F3B /* JsonFetcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonFetcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC20A4B198D4B9000BE9F3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EDC20A4D198D4B9000BE9F3B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EDC20A4F198D4B9000BE9F3B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EDC20A53198D4B9000BE9F3B /* JsonFetcher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JsonFetcher-Info.plist"; sourceTree = "<group>"; };
+		EDC20A55198D4B9000BE9F3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EDC20A57198D4B9000BE9F3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDC20A59198D4B9000BE9F3B /* JsonFetcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JsonFetcher-Prefix.pch"; sourceTree = "<group>"; };
+		EDC20A5A198D4B9000BE9F3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EDC20A5B198D4B9000BE9F3B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EDC20A5E198D4B9000BE9F3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDC20A60198D4B9000BE9F3B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EDC20A61198D4B9000BE9F3B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EDC20A63198D4B9000BE9F3B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EDC20A69198D4B9100BE9F3B /* JsonFetcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsonFetcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC20A6A198D4B9100BE9F3B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EDC20A72198D4B9100BE9F3B /* JsonFetcherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JsonFetcherTests-Info.plist"; sourceTree = "<group>"; };
+		EDC20A74198D4B9100BE9F3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EDC20A76198D4B9100BE9F3B /* JsonFetcherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonFetcherTests.m; sourceTree = "<group>"; };
+		EDC20A80198D4C1B00BE9F3B /* JsonReceiverDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonReceiverDelegate.h; sourceTree = "<group>"; };
+		EDC20A81198D4C9600BE9F3B /* WebFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebFetcher.h; sourceTree = "<group>"; };
+		EDC20A82198D4C9600BE9F3B /* WebFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebFetcher.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDC20A45198D4B9000BE9F3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC20A4E198D4B9000BE9F3B /* CoreGraphics.framework in Frameworks */,
+				EDC20A50198D4B9000BE9F3B /* UIKit.framework in Frameworks */,
+				EDC20A4C198D4B9000BE9F3B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC20A66198D4B9100BE9F3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC20A6B198D4B9100BE9F3B /* XCTest.framework in Frameworks */,
+				EDC20A6D198D4B9100BE9F3B /* UIKit.framework in Frameworks */,
+				EDC20A6C198D4B9100BE9F3B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDC20A3F198D4B9000BE9F3B = {
+			isa = PBXGroup;
+			children = (
+				EDC20A51198D4B9000BE9F3B /* JsonFetcher */,
+				EDC20A70198D4B9100BE9F3B /* JsonFetcherTests */,
+				EDC20A4A198D4B9000BE9F3B /* Frameworks */,
+				EDC20A49198D4B9000BE9F3B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDC20A49198D4B9000BE9F3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDC20A48198D4B9000BE9F3B /* JsonFetcher.app */,
+				EDC20A69198D4B9100BE9F3B /* JsonFetcherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDC20A4A198D4B9000BE9F3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDC20A4B198D4B9000BE9F3B /* Foundation.framework */,
+				EDC20A4D198D4B9000BE9F3B /* CoreGraphics.framework */,
+				EDC20A4F198D4B9000BE9F3B /* UIKit.framework */,
+				EDC20A6A198D4B9100BE9F3B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDC20A51198D4B9000BE9F3B /* JsonFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				EDC20A5A198D4B9000BE9F3B /* AppDelegate.h */,
+				EDC20A5B198D4B9000BE9F3B /* AppDelegate.m */,
+				EDC20A5D198D4B9000BE9F3B /* Main.storyboard */,
+				EDC20A60198D4B9000BE9F3B /* ViewController.h */,
+				EDC20A61198D4B9000BE9F3B /* ViewController.m */,
+				EDC20A80198D4C1B00BE9F3B /* JsonReceiverDelegate.h */,
+				EDC20A81198D4C9600BE9F3B /* WebFetcher.h */,
+				EDC20A82198D4C9600BE9F3B /* WebFetcher.m */,
+				EDC20A63198D4B9000BE9F3B /* Images.xcassets */,
+				EDC20A52198D4B9000BE9F3B /* Supporting Files */,
+			);
+			path = JsonFetcher;
+			sourceTree = "<group>";
+		};
+		EDC20A52198D4B9000BE9F3B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDC20A53198D4B9000BE9F3B /* JsonFetcher-Info.plist */,
+				EDC20A54198D4B9000BE9F3B /* InfoPlist.strings */,
+				EDC20A57198D4B9000BE9F3B /* main.m */,
+				EDC20A59198D4B9000BE9F3B /* JsonFetcher-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDC20A70198D4B9100BE9F3B /* JsonFetcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDC20A76198D4B9100BE9F3B /* JsonFetcherTests.m */,
+				EDC20A71198D4B9100BE9F3B /* Supporting Files */,
+			);
+			path = JsonFetcherTests;
+			sourceTree = "<group>";
+		};
+		EDC20A71198D4B9100BE9F3B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDC20A72198D4B9100BE9F3B /* JsonFetcherTests-Info.plist */,
+				EDC20A73198D4B9100BE9F3B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDC20A47198D4B9000BE9F3B /* JsonFetcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC20A7A198D4B9100BE9F3B /* Build configuration list for PBXNativeTarget "JsonFetcher" */;
+			buildPhases = (
+				EDC20A44198D4B9000BE9F3B /* Sources */,
+				EDC20A45198D4B9000BE9F3B /* Frameworks */,
+				EDC20A46198D4B9000BE9F3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JsonFetcher;
+			productName = JsonFetcher;
+			productReference = EDC20A48198D4B9000BE9F3B /* JsonFetcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDC20A68198D4B9100BE9F3B /* JsonFetcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC20A7D198D4B9100BE9F3B /* Build configuration list for PBXNativeTarget "JsonFetcherTests" */;
+			buildPhases = (
+				EDC20A65198D4B9100BE9F3B /* Sources */,
+				EDC20A66198D4B9100BE9F3B /* Frameworks */,
+				EDC20A67198D4B9100BE9F3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDC20A6F198D4B9100BE9F3B /* PBXTargetDependency */,
+			);
+			name = JsonFetcherTests;
+			productName = JsonFetcherTests;
+			productReference = EDC20A69198D4B9100BE9F3B /* JsonFetcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDC20A40198D4B9000BE9F3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Zachary Barryte";
+				TargetAttributes = {
+					EDC20A68198D4B9100BE9F3B = {
+						TestTargetID = EDC20A47198D4B9000BE9F3B;
+					};
+				};
+			};
+			buildConfigurationList = EDC20A43198D4B9000BE9F3B /* Build configuration list for PBXProject "JsonFetcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDC20A3F198D4B9000BE9F3B;
+			productRefGroup = EDC20A49198D4B9000BE9F3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDC20A47198D4B9000BE9F3B /* JsonFetcher */,
+				EDC20A68198D4B9100BE9F3B /* JsonFetcherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDC20A46198D4B9000BE9F3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC20A64198D4B9000BE9F3B /* Images.xcassets in Resources */,
+				EDC20A56198D4B9000BE9F3B /* InfoPlist.strings in Resources */,
+				EDC20A5F198D4B9000BE9F3B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC20A67198D4B9100BE9F3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC20A75198D4B9100BE9F3B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDC20A44198D4B9000BE9F3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC20A62198D4B9000BE9F3B /* ViewController.m in Sources */,
+				EDC20A5C198D4B9000BE9F3B /* AppDelegate.m in Sources */,
+				EDC20A83198D4C9600BE9F3B /* WebFetcher.m in Sources */,
+				EDC20A58198D4B9000BE9F3B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC20A65198D4B9100BE9F3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC20A77198D4B9100BE9F3B /* JsonFetcherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDC20A6F198D4B9100BE9F3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDC20A47198D4B9000BE9F3B /* JsonFetcher */;
+			targetProxy = EDC20A6E198D4B9100BE9F3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDC20A54198D4B9000BE9F3B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC20A55198D4B9000BE9F3B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EDC20A5D198D4B9000BE9F3B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC20A5E198D4B9000BE9F3B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDC20A73198D4B9100BE9F3B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC20A74198D4B9100BE9F3B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDC20A78198D4B9100BE9F3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EDC20A79198D4B9100BE9F3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDC20A7B198D4B9100BE9F3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JsonFetcher/JsonFetcher-Prefix.pch";
+				INFOPLIST_FILE = "JsonFetcher/JsonFetcher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EDC20A7C198D4B9100BE9F3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JsonFetcher/JsonFetcher-Prefix.pch";
+				INFOPLIST_FILE = "JsonFetcher/JsonFetcher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EDC20A7E198D4B9100BE9F3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JsonFetcher.app/JsonFetcher";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JsonFetcher/JsonFetcher-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JsonFetcherTests/JsonFetcherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EDC20A7F198D4B9100BE9F3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JsonFetcher.app/JsonFetcher";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JsonFetcher/JsonFetcher-Prefix.pch";
+				INFOPLIST_FILE = "JsonFetcherTests/JsonFetcherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDC20A43198D4B9000BE9F3B /* Build configuration list for PBXProject "JsonFetcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC20A78198D4B9100BE9F3B /* Debug */,
+				EDC20A79198D4B9100BE9F3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDC20A7A198D4B9100BE9F3B /* Build configuration list for PBXNativeTarget "JsonFetcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC20A7B198D4B9100BE9F3B /* Debug */,
+				EDC20A7C198D4B9100BE9F3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EDC20A7D198D4B9100BE9F3B /* Build configuration list for PBXNativeTarget "JsonFetcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC20A7E198D4B9100BE9F3B /* Debug */,
+				EDC20A7F198D4B9100BE9F3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDC20A40198D4B9000BE9F3B /* Project object */;
+}
